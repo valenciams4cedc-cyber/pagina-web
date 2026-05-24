@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cap Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cap Shop</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección Inicio -->
+    <section id="inicio">
+      <h2>Bienvenido a Cap Shop</h2>
+      <p>Tu tienda de gorras favoritas.</p>
+    </section>
+
+    <!-- Sección Catálogo -->
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+
+      <!-- Producto Gorra personalizada -->
+      <div class="producto">
+        <h3>🧢 Gorra personalizada</h3>
+        <img src="gorra.png" alt="Gorra personalizada" class="imagen-producto">
+        <p>Diseños únicos con bordados, estampados o parches. Ajuste cómodo y estilo urbano.</p>
+        <p class="precio">$40.000 COP</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>📧 Email: capshop@gmail.com</p>
+      <p>📞 Teléfono: +57 300 123 4567</p>
+      <p>📍 Dirección: Soacha, Cundinamarca</p>
+
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

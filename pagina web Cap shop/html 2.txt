@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cap Shop</title>
+  <style>
+    /* Estilo general */
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f2f5; color:#333; }
+    header { background: linear-gradient(90deg,#ff6600,#ff3300); color:white; padding:20px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.2); }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { color:#ffe0cc; }
+    section { padding:40px; margin:20px auto; max-width:900px; background:white; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); }
+    .producto { text-align:center; margin:30px auto; max-width:400px; background:#fafafa; padding:25px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1); }
+    .producto:hover { transform:translateY(-5px); transition:0.3s; }
+    .imagen-producto { width:100%; border-radius:10px; margin-bottom:15px; }
+    .precio { font-weight:bold; color:#ff3300; font-size:1.2em; }
+    .btn-comprar { background:linear-gradient(90deg,#ff6600,#ff3300); color:white; border:none; padding:12px 30px; margin-top:15px; border-radius:30px; cursor:pointer; font-size:1em; font-weight:bold; transition:transform 0.2s, box-shadow 0.2s; }
+    .btn-comprar:hover { transform:scale(1.1); box-shadow:0 6px 15px rgba(0,0,0,0.3); }
+    #contacto form { display:flex; flex-direction:column; align-items:center; }
+    #contacto input, #contacto textarea { width:80%; margin:10px 0; padding:10px; border:1px solid #ccc; border-radius:8px; }
+    #contacto button { padding:12px 25px; margin-top:10px; cursor:pointer; background:#333; color:white; border:none; border-radius:8px; }
+    #contacto button:hover { background:#555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cap Shop</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#mision">Misión</a>
+      <a href="#vision">Visión</a>
+      <a href="#objetivos">Objetivos</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Inicio -->
+    <section id="inicio">
+      <h2>Bienvenido a Cap Shop</h2>
+      <p>Tu tienda de gorras favoritas.</p>
+    </section>
+
+    <!-- Misión -->
+    <section id="mision">
+      <h2>📌 Misión</h2>
+      <p>Crear gorras originales a partir de gorras reutilizadas, combinando creatividad, estilo y conciencia ambiental. Ofrecer productos únicos que permitan a los jóvenes expresar su personalidad mientras contribuyen a la reducción de residuos y al cuidado del medio ambiente.</p>
+    </section>
+
+    <!-- Visión -->
+    <section id="vision">
+      <h2>🌟 Visión</h2>
+      <p>Convertirnos en una marca reconocida dentro del municipio de Soacha por nuestra capacidad de dar una segunda vida a las gorras, destacando por creatividad, calidad y compromiso ambiental. Ser la opción preferida por los jóvenes que buscan productos auténticos, sostenibles y responsables.</p>
+    </section>
+
+    <!-- Objetivos -->
+    <section id="objetivos">
+      <h2>🎯 Objetivos</h2>
+      <ul>
+        <li>Diseñar un proceso de reacondicionamiento eficiente y seguro para convertir gorras en desuso en productos atractivos y de alta calidad.</li>
+        <li>Implementar técnicas de limpieza, reparación y personalización que aseguren durabilidad, higiene y buen acabado.</li>
+        <li>Analizar el impacto ambiental y social del emprendimiento en la reducción de residuos y fortalecimiento del trabajo local.</li>
+        <li>Identificar el público objetivo y sus preferencias para orientar diseño, estilo y propuesta de valor.</li>
+        <li>Evaluar la viabilidad económica del proyecto considerando costos y proyecciones de ventas.</li>
+      </ul>
+    </section>
+
+    <!-- Catálogo -->
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <div class="producto">
+        <h3>🧢 Gorra personalizada</h3>
+        <img src="file:///C:/Users/famil/OneDrive/Desktop/pagina%20web%20Cap%20shop/imagen/WhatsApp%20Image%202026-05-19%20at%207.16.12%20PM.png" alt="Gorra personalizada" class="imagen-producto">
+        <p>Diseños únicos con bordados, estampados o parches. Ajuste cómodo y estilo urbano.</p>
+        <p class="precio">$40.000 COP</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>📧 Email: capshop@gmail.com</p>
+      <p>📞 Teléfono: +57 300 123 4567</p>
+      <p>📍 Dirección: Soacha, Cundinamarca</p>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    // JS integrado
+    document.querySelectorAll('.btn-comprar').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert("¡Gracias por tu compra en CapShop! 🧢");
+      });
+    });
+  </script>
+</body>
+</html>
